@@ -13,4 +13,24 @@ class RomantoIntConverterTests {
 		assertEquals(1, RomantoIntConverter.convertRomantoInt("I"));
 	}
 
+	@Test
+	public void convertRomanIItoInt() {
+		assertEquals(2, RomantoIntConverter.convertRomantoInt("II"));
+	}
+
+	@Test
+	public void convertRomanIIItoInt() {
+		assertEquals(3, RomantoIntConverter.convertRomantoInt("III"));
+	}
+
+	@Test
+	public void convertRomanVtoInt() {
+		assertEquals(5, RomantoIntConverter.convertRomantoInt("V"));
+	}
+	
+	@Test
+	public void convertRomanXtoInt() {
+		assertEquals(10, RomantoIntConverter.convertRomantoInt("X"));
+	}
+
 }
