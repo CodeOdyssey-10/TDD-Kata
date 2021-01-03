@@ -18,24 +18,58 @@ class RomantoIntConverterTests {
 
 	@Test
 	public void convertRomanIItoInt() {
-		assertEquals(2, RomantoIntConverter.convertRomantoInt("II",chartoIntMap));
+		assertEquals(2, RomantoIntConverter.convertRomantoInt("II", chartoIntMap));
 	}
 
 	@Test
 	public void convertRomanIIItoInt() {
-		assertEquals(3, RomantoIntConverter.convertRomantoInt("III",chartoIntMap));
+		assertEquals(3, RomantoIntConverter.convertRomantoInt("III", chartoIntMap));
 	}
 
 	@Test
 	public void convertRomanVtoInt() {
-		assertEquals(5, RomantoIntConverter.convertRomantoInt("V",chartoIntMap));
+		assertEquals(5, RomantoIntConverter.convertRomantoInt("V", chartoIntMap));
 	}
 
 	@Test
 	public void convertRomanXtoInt() {
-		assertEquals(10, RomantoIntConverter.convertRomantoInt("X",chartoIntMap));
+		assertEquals(10, RomantoIntConverter.convertRomantoInt("X", chartoIntMap));
 	}
 
+	@Test
+	public void convertRomanIVtoInt() {
+		assertEquals(4, RomantoIntConverter.convertRomantoInt("IV", chartoIntMap));
+	}
+
+	@Test
+	public void convertRomanVItoInt() {
+		assertEquals(6, RomantoIntConverter.convertRomantoInt("VI", chartoIntMap));
+	}
+	
+	@Test
+	public void convertRomanVIItoInt() {
+		assertEquals(7, RomantoIntConverter.convertRomantoInt("VII", chartoIntMap));
+	}
+	
+	@Test
+	public void convertRomanLtoInt() {
+		assertEquals(50, RomantoIntConverter.convertRomantoInt("L", chartoIntMap));
+	}
+	@Test
+	public void convertRomanXLtoInt() {
+		assertEquals(40, RomantoIntConverter.convertRomantoInt("XL", chartoIntMap));
+	}
+	
+	@Test
+	public void convertRomanCtoInt() {
+		assertEquals(100, RomantoIntConverter.convertRomantoInt("C", chartoIntMap));
+	}
+	
+	@Test
+	public void convertRomanCDtoInt() {
+		assertEquals(400, RomantoIntConverter.convertRomantoInt("CD", chartoIntMap));
+	}
+	
 	@BeforeAll
 	public static void setup() {
 		chartoIntMap.put('I', 1);
